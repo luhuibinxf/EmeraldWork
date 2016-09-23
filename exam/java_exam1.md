@@ -1,9 +1,9 @@
 ## java exam1	
 
 1. Given:
-   111. public interface Status {
-   121. /* insert code here */ int MY_VALUE = 10;
-   131. }
+   11. public interface Status {
+   12. /* insert code here */ int MY_VALUE = 10;
+   13. }
        Which three are valid on line 12? (Choose three.)
        A. final
        B. static
@@ -13,11 +13,11 @@
        F. abstract
        G. protected
 2.  Given:
-   100. public class Bar {
-       11.static void foo(int...x) {
-   110. // insert code here
-   120. }
-   130. }
+   10. public class Bar {
+      11.static void foo(int...x) {
+   11. // insert code here
+   12. }
+   13. }
        Which two code fragments, inserted independently at line 12, will allow
        the class to compile? (Choose two.)
        A. foreach(x) System.out.println(z);
@@ -25,19 +25,19 @@
        C. while( x.hasNext()) System.out.println( x.next());
        D. for( int i=0; i< x.length; i++ ) System.out.println(x[i]);
 3. Given:
-   111. public class Test {
-   121. public static void main(String [] args) {
-   131. int x =5;
-   141. boolean b1 = true;
-   151. boolean b2 = false;
-       16.
-       17.if((x==4) && !b2)
-   161. System.out.print(”l “);
-   171. System.out.print(”2 “);
-   181. if ((b2 = true) && b1)
-   191. System.out.print(”3 “);
-   201. }
-   211. }
+   11. public class Test {
+   12. public static void main(String [] args) {
+   13. int x =5;
+   14. boolean b1 = true;
+   15. boolean b2 = false;
+      16.
+      17.if((x==4) && !b2)
+   16. System.out.print(”l “);
+   17. System.out.print(”2 “);
+   18. if ((b2 = true) && b1)
+   19. System.out.print(”3 “);
+   20. }
+   21. }
        What is the result?
        A. 2
        B. 3
@@ -47,14 +47,14 @@
        F. Compilation fails.
        G. Au exceptional is thrown at runtime.
 4. Given:
-   311. // some code here
-   321. try {
-   331. // some code here
-   341. } catch (SomeException se) {
-   351. // some code here
-   361. } finally {
-   371. // some code here
-   381. }
+   31. // some code here
+   32. try {
+   33. // some code here
+   34. } catch (SomeException se) {
+   35. // some code here
+   36. } finally {
+   37. // some code here
+   38. }
        Under which three circumstances will the code on line 37 be executed?
        (Choose three.)
        A. The instance gets garbage collected.
@@ -63,15 +63,15 @@
        D. The code on line 31 throws an exception.
        E. The code on line 33 executes successfully.
 5.  Given:
-   100. interface Foo {}
-   110. class Alpha implements Foo { }
-   120. class Beta extends Alpha {}
-   130. class Delta extends Beta {
-   140. public static void main( String[] args) {
-   150. Beta x = new Beta();
-   160. // insert code here
-   170. }
-   180. }
+   10. interface Foo {}
+   11. class Alpha implements Foo { }
+   12. class Beta extends Alpha {}
+   13. class Delta extends Beta {
+   14. public static void main( String[] args) {
+   15. Beta x = new Beta();
+   16. // insert code here
+   17. }
+   18. }
        Which code, inserted at line 16, will cause a
        java.lang.ClassCastException?
        A. Alpha a = x;
@@ -80,20 +80,20 @@
        D. Beta b = (Beta)(Alpha)x;
 6.  Assume that country is set for each class.
    Given:
-   100. public class Money {
-   110. private String country, name;
-   120. public getCountry() { return country; }
-       13.}
-       and:
-   130. class Yen extends Money {
-   140. public String getCountry() { return super.country; }
-   150. }
-       27.
-   160. class Euro extends Money {
-   170. public String getCountry(String timeZone) {
-   180. return super.getCountry();
-   190. }
-   200. }
+   10. public class Money {
+   11. private String country, name;
+   12. public getCountry() { return country; }
+      13.}
+      and:
+   13. class Yen extends Money {
+   14. public String getCountry() { return super.country; }
+   15. }
+      27.
+   16. class Euro extends Money {
+   17. public String getCountry(String timeZone) {
+   18. return super.getCountry();
+   19. }
+   20. }
        Which two are correct? (Choose two.)
        A. Yen returns correct values.
        B. Euro returns correct values.
@@ -110,18 +110,18 @@
    E. class Man { private Dog<bestFriend> }
    F. class Man { private BestFriend<dog> }
 8.  Given:
-   133. public class Pass {
-   143. public static void main(String [1 args) {
-   153. int x 5;
-   163. Pass p = new Pass();
-   173. p.doStuff(x);
-   183. System.out.print(” main x = “+ x);
-   193. }
-       20.
-   203. void doStuff(int x) {
-   213. System.out.print(” doStuff x = “+ x++);
-   223. }
-   233. }
+   13. public class Pass {
+   14. public static void main(String [1 args) {
+   15. int x 5;
+   16. Pass p = new Pass();
+   17. p.doStuff(x);
+   18. System.out.print(” main x = “+ x);
+   19. }
+      20.
+   20. void doStuff(int x) {
+   21. System.out.print(” doStuff x = “+ x++);
+   22. }
+   23. }
        What is the result?
        A. Compilation fails.
        B. An exception is thrown at runtime.
@@ -130,10 +130,10 @@
        E. doStuffx = 5 main x = 6
        F. doStuffx = 6 main x = 5
 9.  Given:
-   100. package com.sun.scjp;
-   110. public class Geodetics {
-   120. public static final double DIAMETER = 12756.32; // kilometers
-   130. }
+   10. package com.sun.scjp;
+   11. public class Geodetics {
+   12. public static final double DIAMETER = 12756.32; // kilometers
+   13. }
        Which two correctly access the DIAMETER member of the Geodetics
        class? (Choose two.)
        A. import com.sun.scjp.Geodetics;
@@ -150,58 +150,58 @@
        public class TerraCarta {
        public double halfway() { return DIAMETER/2.0; } }
 10.  Given:
-    100. class Nav{
-    110. public enum Direction { NORTH, SOUTH, EAST, WEST }
-    120. }
-    130. public class Sprite{
-    140. // insert code here
-    150. }
+    10. class Nav{
+    11. public enum Direction { NORTH, SOUTH, EAST, WEST }
+    12. }
+    13. public class Sprite{
+    14. // insert code here
+    15. }
         Which code, inserted at line 14, allows the Sprite class to compile?
         A. Direction d = NORTH;
         B. Nav.Direction d = NORTH;
         C. Direction d = Direction.NORTH;
         D. Nav.Direction d = Nav.Direction.NORTH;
 11.  Given:
-    100. interface Foo { int bar(); }
-    110. public class Sprite {
-    120. public int fubar( Foo foo) { return foo.bar(); }
-    130. public void testFoo() {
-    140. fubar(
-    150. // insert code here
-        16.);
-    160. }
-    170. }
+    10. interface Foo { int bar(); }
+    11. public class Sprite {
+    12. public int fubar( Foo foo) { return foo.bar(); }
+    13. public void testFoo() {
+    14. fubar(
+    15. // insert code here
+       16.);
+    16. }
+    17. }
         Which code, inserted at line 15, allows the class Sprite to compile?
         A. Foo { public int bar() { return 1; } }
         B. new Foo { public int bar() { return 1; } }
         C. newFoo() { public int bar(){return 1; } }
         D. new class Foo { public int bar() { return 1; } }
 12.  Click the Exhibit button.
-    100. interface Foo {
-    110. int bar();
-    120. }
-        13.
-    130. public class Beta {
-        15.
-    140. class A implements Foo {
-    150. public int bar() { return 1; }
-    160. }
-        19.
-    170. public int fubar( Foo foo) { return foo.bar(); }
-        21.
-    180. public void testFoo() {
-        23.
-    190. class A implements Foo {
-    200. public int bar() { return 2; }
-    210. }
-        27.
-    220. System.out.println( fubar( new A()));
-    230. }
-        30.
-    240. public static void main( String[] argv) {
-    250. new Beta().testFoo();
-    260. }
-    270. }
+    10. interface Foo {
+    11. int bar();
+    12. }
+       13.
+    13. public class Beta {
+       15.
+    14. class A implements Foo {
+    15. public int bar() { return 1; }
+    16. }
+       19.
+    17. public int fubar( Foo foo) { return foo.bar(); }
+       21.
+    18. public void testFoo() {
+       23.
+    19. class A implements Foo {
+    20. public int bar() { return 2; }
+    21. }
+       27.
+    22. System.out.println( fubar( new A()));
+    23. }
+       30.
+    24. public static void main( String[] argv) {
+    25. new Beta().testFoo();
+    26. }
+    27. }
         Which three statements are true? (Choose three.)
         A. Compilation fails.
         B. The code compiles and the output is 2.
@@ -254,15 +254,15 @@
        E. Compilation fails because of an error in line 4.
        F. Compilation fails because of an error in line 5.
 16.  Given:
-    111. public abstract class Shape {
-    121. int x;
-    131. int y;
-    141. public abstract void draw();
-    151. public void setAnchor(int x, int y) {
-    161. this.x = x;
-    171. this.y = y;
-    181. }
-    191. }
+    11. public abstract class Shape {
+    12. int x;
+    13. int y;
+    14. public abstract void draw();
+    15. public void setAnchor(int x, int y) {
+    16. this.x = x;
+    17. this.y = y;
+    18. }
+    19. }
         and a class Circle that extends and fully implements the Shape class.
         Which is correct?
         A. Shape s = new Shape();
@@ -281,15 +281,15 @@
         c.Shape.setAnchor(10,10);
         c.Shape.draw();
 17.  Given:
-    100. abstract public class Employee {
-    110. protected abstract double getSalesAmount();
-    120. public double getCommision() {
-    130. return getSalesAmount() * 0.15;
-    140. }
-    150. }
-    160. class Sales extends Employee {
-    170. // insert method here
-    180. }
+    10. abstract public class Employee {
+    11. protected abstract double getSalesAmount();
+    12. public double getCommision() {
+    13. return getSalesAmount() * 0.15;
+    14. }
+    15. }
+    16. class Sales extends Employee {
+    17. // insert method here
+    18. }
         Which two methods, inserted independently at line 17, correctly
         complete the Sales class? (Choose two.)
         A. double getSalesAmount() { return 1230.45; }
@@ -297,8 +297,8 @@
         C. private double getSalesAmount() { return 1230.45; }
         D. protected double getSalesAmount() { return 1230.45; }
 18.  Given:
-    100. interface Data { public void load(); }
-    110. abstract class Info { public abstract void load(); }
+    10. interface Data { public void load(); }
+    11. abstract class Info { public abstract void load(); }
         Which class correctly uses the Data interface and Info class?
         A. public class Employee extends Info implements Data {
         public void load() { /*do something*/ }
@@ -323,15 +323,15 @@
         public void Info.load() { /*do something*/ }
         }
 19.  Given:
-    111. public abstract class Shape {
-    121. private int x;
-    131. private int y;
-    141. public abstract void draw();
-    151. public void setAnchor(int x, int y) {
-    161. this.x = x;
-    171. this.y = y;
-    181. }
-    191. }
+    11. public abstract class Shape {
+    12. private int x;
+    13. private int y;
+    14. public abstract void draw();
+    15. public void setAnchor(int x, int y) {
+    16. this.x = x;
+    17. this.y = y;
+    18. }
+    19. }
         Which two classes use the Shape class correctly? (Choose two.)
         A. public class Circle implements Shape {
         private int radius;
@@ -434,19 +434,19 @@
        D. 17
        E. 24
 23.  Given:
-    555. int []x= {1, 2,3,4, 5};
-        56.int y[] =x;
-    565. System.out.println(y[2]);
+    55. int []x= {1, 2,3,4, 5};
+       56.int y[] =x;
+    56. System.out.println(y[2]);
         Which is true?
         A. Line 57 will print the value 2.
         B. Line 57 will print the value 3.
         C. Compilation will fail because of an error in line 55.
         D. Compilation will fail because of an error in line 56.
 24.  Given:
-    355. String #name = “Jane Doe”;
-        36.int$age=24;
-    365. Double_height = 123.5;
-    375. double~temp = 37.5;
+    35. String #name = “Jane Doe”;
+       36.int$age=24;
+    36. Double_height = 123.5;
+    37. double~temp = 37.5;
         Which two are true? (Choose two.)
         A. Line 35 will not compile.
         B. Line 36 will not compile.
@@ -462,11 +462,11 @@
     static void init() { a = new int[3]; a[0]=100; a[1]=200; }
     Answer: AB
 26.  Given:
-    111. public static void main(String[] args) {
-    121. Object obj =new int[] { 1,2,3 };
-    131. int[] someArray = (int[])obj;
-    141. for (int i: someArray) System.out.print(i +“ “)
-    151. }
+    11. public static void main(String[] args) {
+    12. Object obj =new int[] { 1,2,3 };
+    13. int[] someArray = (int[])obj;
+    14. for (int i: someArray) System.out.print(i +“ “)
+    15. }
         ‘What is the result?
         A. 1 2 3
         B. Compilation fails because of an error in line 12.
@@ -474,10 +474,10 @@
         D. Compilation fails because of an error in line 14.
         E. A ClassCastException is thrown at runtime.
 27. Given:
-    100. class Foo {
-    110. static void alpha() { /* more code here */ }
-    120. void beta() { /* more code here */ }
-    130. }
+    10. class Foo {
+    11. static void alpha() { /* more code here */ }
+    12. void beta() { /* more code here */ }
+    13. }
         Which two are true? (Choose two.)
         A. Foo.beta() is a valid invocation of beta().
         B. Foo.alpha() is a valid invocation of alpha().
@@ -498,9 +498,9 @@
     about an inventory item. A JavaBeans component is needed to
     do this. The Inventoryltem class has private instance variables to store
     the item information:
-    100. private int itemId;
-    110. private String name;
-    120. private String description;
+    10. private int itemId;
+    11. private String name;
+    12. private String description;
         Which method signature follows the JavaBeans naming standards for
         modifying the itemld instance variable?
         A. itemID(int itemId)
@@ -548,14 +548,14 @@
         Answer: AC
 32.  Given:
     100. class One {
-    110. public One foo() { return this; }
-    120. }
-    130. class Two extends One {
-    140. public One foo() { return this; }
-    150. }
-    160. class Three extends Two {
-    170. // insert method here
-    180. }
+    11. public One foo() { return this; }
+    12. }
+    13. class Two extends One {
+    14. public One foo() { return this; }
+    15. }
+    16. class Three extends Two {
+    17. // insert method here
+    18. }
         Which two methods, inserted individually, correctly complete the Three
         class? (Choose two.)
         A. public void foo() { }
@@ -564,12 +564,12 @@
         D. public One foo() { return this; }
         E. public Object foo() { return this; }
 33. Given:
-    100. class One {
-    110. void foo() {}
-    120. }
-    130. class Two extends One {
-    140. //insert method here
-    150. }
+    10. class One {
+    11. void foo() {}
+    12. }
+    13. class Two extends One {
+    14. //insert method here
+    15. }
         Which three methods, inserted individually at line 14, will correctly
         complete class Two? (Choose three.)
         A. int foo() { /* more code here */ }
@@ -643,13 +643,13 @@
        C. Compilation fails because of an error in line 4.
        D. Compilation succeeds and no runtime errors with class A occur.
 37. Given:
-    100. class Line {
-    110. public static class Point { }
-    120. }
-        13.
-    130. class Triangle {
-    140. // insert code here
-    150. }
+    10. class Line {
+    11. public static class Point { }
+    12. }
+       13.
+    13. class Triangle {
+    14. // insert code here
+    15. }
         Which code, inserted at line 15, creates an instance of the Point class
         defined in Line?
         A. Point p = new Point();
@@ -657,15 +657,15 @@
         C. The Point class cannot be instatiated at line 15.
         D. Line 1 = new Line() ; 1.Point p = new 1.Point();
 38. Given:
-    100. class Line {
-    110. public class Point { public int x,y; }
-    120. public Point getPoint() { return new Point(); }
-    130. }
-    140. class Triangle {
-    150. public Triangle() {
-    160. // insert code here
-    170. }
-    180. }
+    10. class Line {
+    11. public class Point { public int x,y; }
+    12. public Point getPoint() { return new Point(); }
+    13. }
+    14. class Triangle {
+    15. public Triangle() {
+    16. // insert code here
+    17. }
+    18. }
         Which code, inserted at line 16, correctly retrieves a local instance of a
         Point object?
         A. Point p = Line.getPoint();
@@ -673,18 +673,18 @@
         C. Point p = (new Line()).getPoint();
         D. Line.Point p = (new Line()).getPoint();
 39. Given:
-    100. class One {
-    110. public One() { System.out.print(1); }
-    120. }
-    130. class Two extends One {
-    140. public Two() { System.out.print(2); }
-    150. }
-    160. class Three extends Two {
-    170. public Three() { System.out.print(3); }
-    180. }
-    190. public class Numbers{
-    200. public static void main( String[] argv) { new Three(); }
-    210. }
+    10. class One {
+    11. public One() { System.out.print(1); }
+    12. }
+    13. class Two extends One {
+    14. public Two() { System.out.print(2); }
+    15. }
+    16. class Three extends Two {
+    17. public Three() { System.out.print(3); }
+    18. }
+    19. public class Numbers{
+    20. public static void main( String[] argv) { new Three(); }
+    21. }
         What is the result when this code is executed?
         A. 1
         B. 3
@@ -692,22 +692,22 @@
         D. 321
         E. The code rims with no output.
 40. Click the Exhibit button.
-    111. class Person {
-    121. String name = “No name’;
-    131. public Person(String nm) { name = nm; }
-    141. }
-        15.
-    151. class Employee extends Person {
-    161. String emplD = “0000”;
-    171. public Employee(String id) { empID = id; }
-    181. }
-        20.
-    191. public class EmployeeTest {
-    201. public static void main(String[] args) {
-    211. Employee e = new Employee(”4321”);
-    221. System.out.println(e.empID);
-    231. }
-    241. }
+    11. class Person {
+    12. String name = “No name’;
+    13. public Person(String nm) { name = nm; }
+    14. }
+       15.
+    15. class Employee extends Person {
+    16. String emplD = “0000”;
+    17. public Employee(String id) { empID = id; }
+    18. }
+       20.
+    19. public class EmployeeTest {
+    20. public static void main(String[] args) {
+    21. Employee e = new Employee(”4321”);
+    22. System.out.println(e.empID);
+    23. }
+    24. }
         What is the result?
         A. 4321
         B. 0000
@@ -734,30 +734,30 @@
        E. The code will compile if public Plant() { Plant(”fern”); } is added to
        the Plant class.
 42. public class Bootchy {
-    122. int bootch;
-    132. String snootch;
-        14.
-    142. public Bootchy() {
-    152. this(”snootchy”);
-    162. System.out.print(”first “);
-    172. }
-        19.
-    182. public Bootchy(String snootch) {
-    192. this(420, “snootchy”);
-    202. System.out.print(”second “);
-    212. }
-        24.
-    222. public Bootchy(int bootch, String snootch) {
-    232. this.bootch = bootch;
-    242. this.snootch = snootch;
-    252. System.out.print(”third “);
-    262. }
-        30.
-    272. public static void main(String[] args) {
-    282. Bootchy b = new Bootchy();
-    292. System.out.print(b.snootch +“ “ + b.bootch);
-    302. }
-    312. }
+    12. int bootch;
+    13. String snootch;
+       14.
+    14. public Bootchy() {
+    15. this(”snootchy”);
+    16. System.out.print(”first “);
+    17. }
+       19.
+    18. public Bootchy(String snootch) {
+    19. this(420, “snootchy”);
+    20. System.out.print(”second “);
+    21. }
+       24.
+    22. public Bootchy(int bootch, String snootch) {
+    23. this.bootch = bootch;
+    24. this.snootch = snootch;
+    25. System.out.print(”third “);
+    26. }
+       30.
+    27. public static void main(String[] args) {
+    28. Bootchy b = new Bootchy();
+    29. System.out.print(b.snootch +“ “ + b.bootch);
+    30. }
+    31. }
         What is the result?
         A. snootchy 420 third second first
         B. snootchy 420 first second third
@@ -766,18 +766,18 @@
         E. third first second snootchy 420
         F. first second first third snootchy 420
 43.  Given:
-    122. public class Test {
-    132. public enum Dogs {collie, harrier};
-    142. public static void main(String [] args) {
-    152. Dogs myDog = Dogs.collie;
-    162. switch (myDog) {
-    172. case collie:
-    182. System.out.print(”collie “);
-    192. case harrier:
-    202. System.out.print(”harrier “);
-    212. }
-    222. }
-    232. }
+    12. public class Test {
+    13. public enum Dogs {collie, harrier};
+    14. public static void main(String [] args) {
+    15. Dogs myDog = Dogs.collie;
+    16. switch (myDog) {
+    17. case collie:
+    18. System.out.print(”collie “);
+    19. case harrier:
+    20. System.out.print(”harrier “);
+    21. }
+    22. }
+    23. }
         What is the result?
         A. collie
         B. harrier
@@ -785,16 +785,16 @@
         D. collie harrier
         E. An exception is thrown at runtime.
 44. Given:
-    111. public void testIfA() {
-    121. if(testIfB(”True”)) {
-    131. System.out.println(”True”);
-    141. } else {
-    151. System.out.println(”Not true”);
-    161. }
-    171. }
-    181. public Boolean testIfB(String str) {
-    191. return Boolean.valueOf(str);
-    201. }
+    11. public void testIfA() {
+    12. if(testIfB(”True”)) {
+    13. System.out.println(”True”);
+    14. } else {
+    15. System.out.println(”Not true”);
+    16. }
+    17. }
+    18. public Boolean testIfB(String str) {
+    19. return Boolean.valueOf(str);
+    20. }
         What is the result when method testIfA is invoked?
         A. True
         B. Not true
@@ -802,13 +802,13 @@
         D. Compilation fails because of an error at line 12.
         E. Compilation fails because of an error at line 19.
 45. Given:
-    111. public static void main(String[] args) {
-    121. Integer i = uew Integer(1) + new Integer(2);
-    131. switch(i) {
-    141. case 3: System.out.println(”three”); break;
-    151. default: System.out.println(”other”); break;
-    161. }
-    171. }
+    11. public static void main(String[] args) {
+    12. Integer i = uew Integer(1) + new Integer(2);
+    13. switch(i) {
+    14. case 3: System.out.println(”three”); break;
+    15. default: System.out.println(”other”); break;
+    16. }
+    17. }
         ‘What is the result?
         A. three
         B. other
@@ -817,16 +817,16 @@
         E. Compilation fails because of an error on line 13.
         F. Compilation fails because of an error on line 15.
 46. Given:
-    111. public static void main(String[] args) {
-    121. String str = “null’;
-    131. if (str == null) {
-    141. System.out.println(”null”);
-    151. } else (str.length() == 0) {
-    161. System.out.println(”zero”);
-    171. } else {
-    181. System.out.println(”some”);
-    191. }
-    201. }
+    11. public static void main(String[] args) {
+    12. String str = “null’;
+    13. if (str == null) {
+    14. System.out.println(”null”);
+    15. } else (str.length() == 0) {
+    16. System.out.println(”zero”);
+    17. } else {
+    18. System.out.println(”some”);
+    19. }
+    20. }
         ‘What is the result?
         A. null
         B. zero
@@ -834,16 +834,16 @@
         D. Compilation fails.
         E. An exception is thrown at runtime.
 47. Given:
-    111. Float pi = new Float(3.14f);
-        12.if(pi>3) {
-    121. System.out.print(”pi is bigger than 3. “);
-    131. }
-    141. else {
-    151. System.out.print(”pi is not bigger than 3. “);
-    161. }
-    171. finally {
-    181. System.out.println(”Have a nice day.”);
-    191. }
+    11. Float pi = new Float(3.14f);
+       12.if(pi>3) {
+    12. System.out.print(”pi is bigger than 3. “);
+    13. }
+    14. else {
+    15. System.out.print(”pi is not bigger than 3. “);
+    16. }
+    17. finally {
+    18. System.out.println(”Have a nice day.”);
+    19. }
         ‘What is the result?
         A. Compilation fails.
         B. pi is bigger than 3.
@@ -853,11 +853,11 @@
 48. Given:
     10.int x=0;
     11.int y 10;
-    122. do {
-        l3. y--;
-    132. ++x;
-    142. } while (x < 5);
-    152. System.out.print(x + “,“ + y);
+    12. do {
+       l3. y--;
+    13. ++x;
+    14. } while (x < 5);
+    15. System.out.print(x + “,“ + y);
         What is the result?
         A. 5,6
         B. 5,5
@@ -865,36 +865,36 @@
         D. 6,6
 49. Given:
     25.intx=12;
-    266. while (x < 10) {
-    276. x--;
-    286. }
-    296. System.out.print(x);
+    26. while (x < 10) {
+    27. x--;
+    28. }
+    29. System.out.print(x);
         What is the result?
         A. 0
         B. 10
         C. 12
         D. Line 29 will never be reached
 50. Given:
-    355. int x= 10;
-    365. do {
-    375. x--;
-    385. } while(x< 10);
+    35. int x= 10;
+    36. do {
+    37. x--;
+    38. } while(x< 10);
         How many times will line 37 be executed?
         A. ten times
         B. zero times
         C. one to me times
         D. more than ten times
 51. Give:
-    111. public static Iterator reverse(List list) {
-    121. Collections.reverse(list);
-    131. return list.iterator();
-    141. }
-    151. public static void main(String[] args) {
-    161. List list = new ArrayList();
-    171. list.add(” 1”); list.add(”2”); list.add(”3”);
-    181. for (Object obj: reverse(list))
-    191. System.out.print(obj + “,”);
-    201. }
+    11. public static Iterator reverse(List list) {
+    12. Collections.reverse(list);
+    13. return list.iterator();
+    14. }
+    15. public static void main(String[] args) {
+    16. List list = new ArrayList();
+    17. list.add(” 1”); list.add(”2”); list.add(”3”);
+    18. for (Object obj: reverse(list))
+    19. System.out.print(obj + “,”);
+    20. }
         ‘What is the result?
         A. 3,2, 1,
         B. 1, 2, 3,
@@ -902,16 +902,16 @@
         D. The code runs with no output.
         E. An exception is thrown at runtime.
 52. Given:
-    111. public static Collection get() {
-    121. Collection sorted = new LinkedList();
-    131. sorted.add(’B”); sorted.add(”C”); sorted.add(”A”);
-    141. return sorted;
-    151. }
-    161. public static void main(String[] args) {
-    171. for (Object obj: get()) {
-    181. System.out.print(obj + “, “);
-    191. }
-    201. }
+    11. public static Collection get() {
+    12. Collection sorted = new LinkedList();
+    13. sorted.add(’B”); sorted.add(”C”); sorted.add(”A”);
+    14. return sorted;
+    15. }
+    16. public static void main(String[] args) {
+    17. for (Object obj: get()) {
+    18. System.out.print(obj + “, “);
+    19. }
+    20. }
         What is the result?
         A. A, B, C,
         B. B, C, A,
@@ -919,12 +919,12 @@
         D. The code runs with no output.
         E. An exception is thrown at runtime.
 53. Given:
-    111. public static void main(String[] args) {
-    121. for (int i=0;i<= 10;i++){
-    131. if( i>6) break;
-    141. }
-    151. System.out.println(i);
-    161. }
+    11. public static void main(String[] args) {
+    12. for (int i=0;i<= 10;i++){
+    13. if( i>6) break;
+    14. }
+    15. System.out.println(i);
+    16. }
         What is the result?
         A. 6
         B. 7
@@ -946,16 +946,16 @@
        E. java -ea test file1 file2
        F. java -ea:test test file1
 55. Given:
-    122. public class AssertStuff {
-        13.
-    132. public static void main(String [] args) {
-    142. int x= 5;
-    152. int y= 7;
-        17.
-    162. assert (x> y): “stuff”;
-    172. System.out.println(”passed”);
-    182. }
-    192. }
+    12. public class AssertStuff {
+       13.
+    13. public static void main(String [] args) {
+    14. int x= 5;
+    15. int y= 7;
+       17.
+    16. assert (x> y): “stuff”;
+    17. System.out.println(”passed”);
+    18. }
+    19. }
         And these command line invocations:
         java AssertStuff
         java -ea AssertStuff
@@ -1039,29 +1039,29 @@
        E. Line 46 will compile if enclosed in a try block, where TestException
        is caught.
 59. Click the Exhibit button.
-    100. public class ClassA {
-    110. public void methodA() {
-    120. ClassB classB = new ClassB();
-    130. classB.getValue();
-    140. }
-    150. }
+    10. public class ClassA {
+    11. public void methodA() {
+    12. ClassB classB = new ClassB();
+    13. classB.getValue();
+    14. }
+    15. }
+       And:
+    16. class ClassB {
+    17. public ClassC classC;
+       22.
+    18. public String getValue() {
+    19. return classC.getValue();
+    20. }
+    21. }
         And:
-    160. class ClassB {
-    170. public ClassC classC;
-        22.
-    180. public String getValue() {
-    190. return classC.getValue();
-    200. }
-    210. }
-        And:
-    220. class ClassC {
-    230. public String value;
-        32.
-    240. public String getValue() {
-    250. value = “ClassB”;
-    260. return value;
-    270. }
-    280. }
+    22. class ClassC {
+    23. public String value;
+       32.
+    24. public String getValue() {
+    25. value = “ClassB”;
+    26. return value;
+    27. }
+    28. }
         Given:
         ClassA a = new ClassA();
         a.methodA();
@@ -1071,11 +1071,11 @@
         C. The code runs with no output.
         D. An exception is thrown at runtime.
 60. Given:
-    100. public class Foo {
-    110. static int[] a;
-    120. static { a[0]=2; }
-    130. public static void main( String[] args) {}
-    140. }
+    10. public class Foo {
+    11. static int[] a;
+    12. static { a[0]=2; }
+    13. public static void main( String[] args) {}
+    14. }
         Which exception or error will be thrown when a programmer attempts
         to run this code?
         A. java.lang. StackOverflowError
@@ -1083,14 +1083,14 @@
         C. java.lang.ExceptionlnlnitializerError
         D. java.lang.ArraylndexOutOfBoundsException
 61. Given:
-    100. public class ClassA {
-    110. public void count(int i) {
-    120. count(++i);
-    130. }
-    140. }
-        And:
-    150. ClassA a = new ClassA();
-    160. a.count(3);
+    10. public class ClassA {
+    11. public void count(int i) {
+    12. count(++i);
+    13. }
+    14. }
+       And:
+    15. ClassA a = new ClassA();
+    16. a.count(3);
         Which exception or error should be thrown by the virtual machine?
         A. StackOverflowError
         B. NullPointerException
@@ -1132,13 +1132,13 @@
        E. Compilation fails.
        F. An exception is thrown at runtime.
 64.  Given:
-    111. class Converter {
-    121. public static void main(String[] args) {
-    131. Integer i = args[0];
-    141. int j = 12;
-    151. System.out.println(”It is “ + (j==i) + “that j==i.”);
-    161. }
-    171. }
+    11. class Converter {
+    12. public static void main(String[] args) {
+    13. Integer i = args[0];
+    14. int j = 12;
+    15. System.out.println(”It is “ + (j==i) + “that j==i.”);
+    16. }
+    17. }
         What is the result when the programmer attempts to compile the code
         and run it with the command java Converter 12?
         A. It is true that j==i.
@@ -1146,13 +1146,13 @@
         C. An exception is thrown at runtime.
         D. Compilation fails because of an error in line 13.
 65. Given this method in a class:
-    211. public String toString() {
-    221. StringBuffer buffer = new StringBuffer();
-    231. buffer.append(’<’);
-    241. buffer.append(this.name);
-    251. buffer.append(’>’);
-    261. return buffer.toString();
-    271. }
+    21. public String toString() {
+    22. StringBuffer buffer = new StringBuffer();
+    23. buffer.append(’<’);
+    24. buffer.append(this.name);
+    25. buffer.append(’>’);
+    26. return buffer.toString();
+    27. }
         Which is true?
         A. This code is NOT thread-safe.
         B. The programmer can replace StringBuffer with StringBuilder with no
@@ -1162,13 +1162,13 @@
         D. This code will perform poorly. For better performance, the code
         should be rewritten: return “<“+ this.name + “>”;
 66. Given:
-    111. public String makinStrings() {
-    121. String s = “Fred”;
-    131. s = s + “47”;
-    141. s = s.substring(2, 5);
-    151. s = s.toUpperCase();
-    161. return s.toString();
-    171. }
+    11. public String makinStrings() {
+    12. String s = “Fred”;
+    13. s = s + “47”;
+    14. s = s.substring(2, 5);
+    15. s = s.toUpperCase();
+    16. return s.toString();
+    17. }
         How many String objects will be created when this method is invoked?
         A. 1
         B. 2
@@ -1196,54 +1196,54 @@
        E. StringBuilder s = new StringBuilder(”123456789”);
        s.delete(0,3).delete( 1 ,3).delete(2,5).insert( 1, “24”);
 68. Given:
-    111. public class Yikes {
-        12.
-    121. public static void go(Long n) {System.out.println(”Long “);}
-    131. public static void go(Short n) {System.out.println(”Short “);}
-    141. public static void go(int n) {System.out.println(”int “);}
-    151. public static void main(String [] args) {
-    161. short y= 6;
-    171. long z= 7;
-    181. go(y);
-    191. go(z);
-    201. }
-    211. }
+    11. public class Yikes {
+       12.
+    12. public static void go(Long n) {System.out.println(”Long “);}
+    13. public static void go(Short n) {System.out.println(”Short “);}
+    14. public static void go(int n) {System.out.println(”int “);}
+    15. public static void main(String [] args) {
+    16. short y= 6;
+    17. long z= 7;
+    18. go(y);
+    19. go(z);
+    20. }
+    21. }
         What is the result?
         A. int Long
         B. Short Long
         C. Compilation fails.
         D. An exception is thrown at runtime.
 69. Given:
-    122. public class Wow {
-    132. public static void go(short n) {System.out.println(”short”); }
-    142. public static void go(Short n) {System.out.println(”SHORT”);}
-    152. public static void go(Long n) {System.out.println(” LONG”); }
-    162. public static void main(String [] args) {
-    172. Short y= 6;
-        18.int z=7;
-    182. go(y);
-    192. go(z);
-    202. }
-    212. }
+    12. public class Wow {
+    13. public static void go(short n) {System.out.println(”short”); }
+    14. public static void go(Short n) {System.out.println(”SHORT”);}
+    15. public static void go(Long n) {System.out.println(” LONG”); }
+    16. public static void main(String [] args) {
+    17. Short y= 6;
+       18.int z=7;
+    18. go(y);
+    19. go(z);
+    20. }
+    21. }
         What is the result?
         A. short LONG
         B. SHORT LONG
         C. Compilation fails.
         D. An exception is thrown at runtime.
 70. Given:
-    100. class MakeFile {
-    110. public static void main(String[] args) {
-    120. try {
-    130. File directory = new File(”d”);
-    140. File file = new File(directory,”f”);
-    150. if(!file.exists()) {
-    160. file.createNewFile();
-    170. }
-    180. } catch (IOException e) {
-    190. e.printStackTrace
-    200. }
-    210. }
-    220. }
+    10. class MakeFile {
+    11. public static void main(String[] args) {
+    12. try {
+    13. File directory = new File(”d”);
+    14. File file = new File(directory,”f”);
+    15. if(!file.exists()) {
+    16. file.createNewFile();
+    17. }
+    18. } catch (IOException e) {
+    19. e.printStackTrace
+    20. }
+    21. }
+    22. }
         The current directory does NOT contain a directory named “d.”
         Which three are true? (Choose three.)
         A. Line 16 is never executed.
@@ -1297,13 +1297,13 @@
        F. If you define D e = (D)(new E()), then e.bMethod() invokes the
        version of bMethod() defined in Line 9.
 74. Given:
-    100. interface A { public int getValue() }
-    110. class B implements A {
-    120. public int getValue() { return 1; }
-    130. }
-    140. class C extends B {
-    150. // insert code here
-    160. }
+    10. interface A { public int getValue() }
+    11. class B implements A {
+    12. public int getValue() { return 1; }
+    13. }
+    14. class C extends B {
+    15. // insert code here
+    16. }
         Which three code fragments, inserted individually at line 15, make use
         of polymorphism? (Choose three.)
         A. public void add(C c) { c.getValue(); }
@@ -1416,21 +1416,21 @@
        E. The code runs with no output.
        F. An exception is thrown at runtime.
 80. Given:
-    100. public class Hello {
-    110. String title;
-    120. int value;
-    130. public Hello() {
-    140. title += “ World”;
-    150. }
-    160. public Hello(int value) {
-    170. this.value = value;
-    180. title = “Hello”;
-    190. Hello();
-    200. }
-    210. }
-        and:
-    220. Hello c = new Hello(5);
-    230. System.out.println(c.title);
+    10. public class Hello {
+    11. String title;
+    12. int value;
+    13. public Hello() {
+    14. title += “ World”;
+    15. }
+    16. public Hello(int value) {
+    17. this.value = value;
+    18. title = “Hello”;
+    19. Hello();
+    20. }
+    21. }
+       and:
+    22. Hello c = new Hello(5);
+    23. System.out.println(c.title);
         What is the result?
         A. Hello
         B. Hello World
@@ -1513,21 +1513,21 @@
        F. protected long blipvert(long x) { return 0; }
        G. protected long blipvert(int x, int y) { return 0; }
 84. Given:
-    100. public class Foo {
-    110. public int a;
-    120. public Foo() { a = 3; }
-    130. public void addFive() { a += 5; }
-    140. }
-        and:
-    150. public class Bar extends Foo {
-    160. public int a;
-    170. public Bar() { a = 8; }
-    180. public void addFive() { this.a +=5; }
-    190. }
-        invoked with:
-    200. Foo foo = new Bar();
-    210. foo.addFive();
-    220. System.out.println(”Value: “+ foo.a);
+    10. public class Foo {
+    11. public int a;
+    12. public Foo() { a = 3; }
+    13. public void addFive() { a += 5; }
+    14. }
+       and:
+    15. public class Bar extends Foo {
+    16. public int a;
+    17. public Bar() { a = 8; }
+    18. public void addFive() { this.a +=5; }
+    19. }
+       invoked with:
+    20. Foo foo = new Bar();
+    21. foo.addFive();
+    22. System.out.println(”Value: “+ foo.a);
         What is the result?
         A. Value: 3
         B. Value: 8
@@ -1536,20 +1536,20 @@
         E. The code runs with no output.
         F. An exception is thrown at runtime.
 85. Given:
-    100. public class SuperCaic {
-    110. protected static int multiply(int a, int b) { return a * b; }
-    120. }
-        and:
-    130. public class SubCalc extends SuperCalc {
-    140. public static int multiply(int a, int b) {
-    150. int c = super.multiply(a, b);
-    160. return c;
-    170. }
-    180. }
-        and:
-    190. SubCalc sc = new SubCalc();
-    200. System.out.println(sc.multiply(3,4));
-    210. System.out.println(SubCalc.multiply(2,2));
+    10. public class SuperCaic {
+    11. protected static int multiply(int a, int b) { return a * b; }
+    12. }
+       and:
+    13. public class SubCalc extends SuperCalc {
+    14. public static int multiply(int a, int b) {
+    15. int c = super.multiply(a, b);
+    16. return c;
+    17. }
+    18. }
+       and:
+    19. SubCalc sc = new SubCalc();
+    20. System.out.println(sc.multiply(3,4));
+    21. System.out.println(SubCalc.multiply(2,2));
         What is the result?
         A. 12
         4
@@ -1575,21 +1575,21 @@
     C. Interfaces must be used when creating a has-a relationship.
     D. Instance variables can be used when creating a has-a relationship.
 88. Given:
-    100. interface Jumper { public void jump(); }
-        ......
-    110. class Animal {}
-        ......
-    120. class Dog extends Animal {
-    130. Tail tail;
-    140. }
-        ......
-    150. class Beagle extends Dog implements Jumper {
-    160. public void jump() { }
-    170. }
+    10. interface Jumper { public void jump(); }
+       ......
+    11. class Animal {}
+       ......
+    12. class Dog extends Animal {
+    13. Tail tail;
+    14. }
+       ......
+    15. class Beagle extends Dog implements Jumper {
+    16. public void jump() { }
+    17. }
         .......
-    180. class Cat implements Jumper {
-    190. public void jump() { }
-    200. }
+    18. class Cat implements Jumper {
+    19. public void jump() { }
+    20. }
         Which three are true? (Choose three.)
         A. Cat is-a Animal
         B. Cat is-a Jumper
@@ -1685,19 +1685,19 @@
        F. import static utils.Repetition.twice;
        G. static import utils.Repetition.twice;
 93. Given:
-    111. interface DeclareStuff{
-    121. public static final int EASY = 3;
-    131. void doStuff(int t); }
-    141. public class TestDeclare implements DeclareStuff {
-    151. public static void main(String [] args) {
-    161. int x=5;
-    171. new TestDeclare().doStuff(++x);
-    181. }
-    191. void doStuff(int s) {
-    201. s += EASY + ++s;
-    211. System.out.println(”s “ + s);
-    221. }
-    231. }
+    11. interface DeclareStuff{
+    12. public static final int EASY = 3;
+    13. void doStuff(int t); }
+    14. public class TestDeclare implements DeclareStuff {
+    15. public static void main(String [] args) {
+    16. int x=5;
+    17. new TestDeclare().doStuff(++x);
+    18. }
+    19. void doStuff(int s) {
+    20. s += EASY + ++s;
+    21. System.out.println(”s “ + s);
+    22. }
+    23. }
         What is the result?
         A. s 14
         B. s 16
@@ -1727,11 +1727,11 @@
        F. Compilation fails. Only lines 7 and 13 contain errors.
        G. Compilation fails. Lines 7, 12, and 13 contain errors.
 95. Given:
-    111. public class Counter {
-    121. public static void main(String[] args) {
-    131. int numArgs = /* insert code here */;
-    141. }
-    151. }
+    11. public class Counter {
+    12. public static void main(String[] args) {
+    13. int numArgs = /* insert code here */;
+    14. }
+    15. }
         and the command line:
         java Counter one fred 42
         Which code, inserted at line 13, captures the number of arguments
@@ -1742,18 +1742,18 @@
         D. args.length()
         E. args.getLength()
 96. Given the command line java Pass2 and:
-    155. public class Pass2 {
-    165. public void main(String [] args) {
-        17.int x=6;
-    175. Pass2 p = new Pass2();
-    185. p.doStuff(x);
-    195. System.out.print(” main x = “+ x);
-    205. }
-        22.
-    215. void doStuff(int x) {
-    225. System.out.print(” doStuffx = “+ x++);
-    235. }
-    245. }
+    15. public class Pass2 {
+    16. public void main(String [] args) {
+       17.int x=6;
+    17. Pass2 p = new Pass2();
+    18. p.doStuff(x);
+    19. System.out.print(” main x = “+ x);
+    20. }
+       22.
+    21. void doStuff(int x) {
+    22. System.out.print(” doStuffx = “+ x++);
+    23. }
+    24. }
         What is the result?
         A. Compilation fails.
         B. An exception is thrown at runtime.
@@ -1762,13 +1762,13 @@
         E. doStuffx = 7 main x = 6
         F. doStuffx = 7 main x = 7
 97. Given:
-    155. public class Yippee {
-    165. public static void main(String [] args) {
-    175. for(int x = 1; x < args.length; x++) {
-    185. System.out.print(args[x] +“ “);
-    195. }
-    205. }
-    215. }
+    15. public class Yippee {
+    16. public static void main(String [] args) {
+    17. for(int x = 1; x < args.length; x++) {
+    18. System.out.print(args[x] +“ “);
+    19. }
+    20. }
+    21. }
         and two separate command line invocations:
         java Yippee
         java Yippee 1234
@@ -1786,14 +1786,14 @@
         F. An exception is thrown at rijntime.
         1234
 98. Given:
-    122. public class Yippee2 {
-        13.
-    132. static public void main(String [] yahoo) {
-    142. for(int x= 1; x<yahoo.length; x++) {
-    152. System.out.print(yahoo[x] + “ “);
-    162. }
-    172. }
-    182. }
+    12. public class Yippee2 {
+       13.
+    13. static public void main(String [] yahoo) {
+    14. for(int x= 1; x<yahoo.length; x++) {
+    15. System.out.print(yahoo[x] + “ “);
+    16. }
+    17. }
+    18. }
         and the command line invocation:
         java Yippee2 a b c
         What is the result?
@@ -1803,25 +1803,25 @@
         D. Compilation fails.
         E. An exception is thrown at runtime.
 99. Click the Exhibit button.
-    111. class Payload {
-    121. private int weight;
-    131. public Payload(int wt) { weight = wt; }
-    141. public void setWeight(mt w) { weight = w; }
-    151. public String toString { return Integer.toString(weight); }
-    161. }
-        17.
-    171. public class TestPayload {
-    181. static void changePayload(Payload p) {
-    191. /* insert code here */
-    201. }
-        22.
-    211. public static void main(String[] args) {
-    221. Payload p = new Payload();
-    231. p.setWeight(1024);
-    241. changePayload(p);
-    251. System.out.println(”The value of p is “+ p);
-    261. }
-    271. }
+    11. class Payload {
+    12. private int weight;
+    13. public Payload(int wt) { weight = wt; }
+    14. public void setWeight(mt w) { weight = w; }
+    15. public String toString { return Integer.toString(weight); }
+    16. }
+       17.
+    17. public class TestPayload {
+    18. static void changePayload(Payload p) {
+    19. /* insert code here */
+    20. }
+       22.
+    21. public static void main(String[] args) {
+    22. Payload p = new Payload();
+    23. p.setWeight(1024);
+    24. changePayload(p);
+    25. System.out.println(”The value of p is “+ p);
+    26. }
+    27. }
         Which statement, placed at line 20, causes the code to print “The
         value of p is 420.”?
         A. p.setWeight(420);
