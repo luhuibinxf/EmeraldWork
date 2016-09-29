@@ -5,8 +5,10 @@
 
 * 行政工作
 
-  * 考试
-    *  [java_1](exam/java_exam1.md)
-	*  [java_1考试答案](exam/java_exam1_answer.md)
+	* 考试
+		*  [java_1](exam/java_exam1.md)
+		*  [java_1考试答案](exam/java_exam1_answer.md)
+	* 练习
+		* [java版日报](practise/java1.md)
 
 
