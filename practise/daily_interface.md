@@ -12,7 +12,7 @@ http://192.168.1.250/dailyapp
 
 调用范例:
 
-​	http://192.168.1.250:8080/dailyapp/login?loginName=chenyan&password=123456	
+​	http://192.168.1.250:8080/dailyapp/login?loginName=test&password=123456	
 
 	接口通用标准和说明
 	{	
