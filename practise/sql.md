@@ -30,7 +30,7 @@ INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (101 ,'李军','男'
 INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (109 ,'王芳','女' ,'1975-02-10',95031);
 INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (103 ,'陆君','男' ,'1974-06-03',95031);
 
-INSERT INTO COURSE(CNO,CNAME,TNO) VALUES ('3-105' ,'计算机导论',825)
+INSERT INTO COURSE(CNO,CNAME,TNO) VALUES ('3-105' ,'计算机导论',825);
 INSERT INTO COURSE(CNO,CNAME,TNO) VALUES ('3-245' ,'操作系统' ,804);
 INSERT INTO COURSE(CNO,CNAME,TNO) VALUES ('6-166' ,'数据电路' ,856);
 INSERT INTO COURSE(CNO,CNAME,TNO) VALUES ('9-888' ,'高等数学' ,100);
@@ -84,7 +84,7 @@ insert into grade values(70,79,’C’);
 insert into grade values(60,69,’D’);
 insert into grade values(0,59,’E’);
 commit;
-``` 
+```
 现查询所有同学的Sno、Cno和rank列。
 19. 查询选修“3-105”课程的成绩高于“109”号同学成绩的所有同学的记录。
 20. 查询score中选学一门以上课程的同学中分数为非最高分成绩的记录。
