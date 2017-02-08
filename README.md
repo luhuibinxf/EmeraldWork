@@ -19,4 +19,5 @@
     * [java版日报](practise/java1.md)
     * [日报系统接口](practise/daily_interface.md)
     * [sql练习](practise/sql.md)
+    * [sql练习1](practise/sql1.md)
 
