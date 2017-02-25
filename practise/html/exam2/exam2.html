@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<title>exam2</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			table {
+				border: 0px none;
+				margin: auto;
+				text-align: center;
+				width:48%;
+			}
+			table td{
+				border: 1px solid rgb(219,219,219);
+			}
+			textarea{
+				overflow-y: scroll;
+			}
+
+			.title{
+				text-align: right;
+				padding: 15px 15px 15px 15px;
+			}
+			.content{
+				text-align: left;
+			}
+			.div_title{
+				text-align: center;
+			}
+			.span_star{
+				margin-left: 10px;
+				position: relative;
+				text-align: center;
+				vertical-align: middle;
+			}
+			.span_star1{
+				margin-left: 0px;
+				position: relative;
+				text-align: center;
+				vertical-align: middle;
+			}
+			.div_footer {
+				border: 0px none;
+				margin: auto;
+				text-align: right;
+				width:58%;
+				background-color: rgb(239,239,239);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div_title">
+			<img src="images/title.jpg" style="width: 58%">
+			<table>
+				<tr>
+					<td class="title">姓名:</td>
+					<td class="content"><input type="text" name=""><span class="span_star">*</span></td>
+					<td class="title">性别:</td>
+					<td class="content">
+						<input type="radio" name="">女
+						<input type="radio" name="">男
+						<span class="span_star">*</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="title">密码:</td>
+					<td class="content"><input type="text" name=""><span class="span_star">*</span></td>
+					<td class="title">年龄:</td>
+					<td class="content">
+						<select>
+							<option>1999</option>
+						</select>年
+						<select>
+							<option>01</option>
+						</select>月
+						<select>
+							<option>01</option>
+						</select>日
+						<span class="span_star1">*</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="title">电子邮件:</td>
+					<td class="content"><input type="text" name=""><span class="span_star">*</span></td>
+					<td class="title" rowspan="2">职业:</td>
+					<td class="content" rowspan="2">
+						<select multiple="true" size="3" style="font-size: 20px">
+							<option>教师</option>
+							<option selected>医生</option>
+							<option>律师</option>
+						</select>
+						*
+					</td>
+				</tr>
+				<tr>
+					<td class="title">密码:</td>
+					<td class="content"><input type="text" name=""><span class="span_star">*</span></td>
+				</tr>
+				<tr>
+					<td class="title">外语:</td>
+					<td class="content" colspan="3">
+						<input type="checkbox" name="">英语
+						<input type="checkbox" name="">法语
+						<input type="checkbox" name="">日语
+						<input type="checkbox" name="">德语
+						<input type="checkbox" name="">俄语
+						<span class="span_star">*</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="title">个人资料:</td>
+					<td class="content"><input type="file" name=""></td>
+					<td class="title" rowspan="2">备注:</td>
+					<td class="content" rowspan="2">
+						<textarea rows="4"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="title">友情链接:</td>
+					<td class="content">
+						<select>
+							<option>志愿者详情</option>	
+						</select>
+						<input type="button" name="" value="前往">
+					</td>
+				</tr>
+			</table>
+			<div class="div_footer">以上带*号的必须选择或填写
+			</div>	
+		<div>
+	</body>
+</html>
