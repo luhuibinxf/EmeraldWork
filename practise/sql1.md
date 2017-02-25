@@ -1,17 +1,20 @@
 	emp 员工表
 	（empno 员工号
- 	 ename 员工姓名
-  	job 工作
-  	mgr 上级编号
-  	hiredate 受雇日期
-  	sal 薪金
-  	comm 佣金
-  	deptno 部门编号）
-　	dept 部门表
-　	（deptno 部门编号
-　	dname 部门名称
-　	loc 地点）
-　　	工资 = 薪金 + 佣金
+	ename 员工姓名
+	job 工作
+	mgr 上级编号
+	hiredate 受雇日期
+	sal 薪金
+	comm 佣金
+	deptno 部门编号）
+	
+	dept 部门表
+	（deptno 部门编号
+	dname 部门名称
+	loc 地点）
+	
+	工资 = 薪金 + 佣金
+
 1.列出至少有一个员工的所有部门。
 2.列出薪金比“SMITH”多的所有员工。（大于最大薪水SMITH员工）
 3.列出所有员工的姓名及其直接上级的姓名。
