@@ -75,15 +75,16 @@ INSERT INTO TEACHER(TNO,TNAME,TSEX,TBIRTHDAY,PROF,DEPART)VALUES (831,'刘冰','�
 18. 假设使用如下命令建立了一个grade表： 现查询所有同学的Sno、Cno和rank列。
 ``` sql
 create table grade(
-	low   number(3,0),
-	upp   number(3),
-	rank   char(1));
-insert into grade values(90,100,’A’);		
-insert into grade values(80,89,’B’);
-insert into grade values(70,79,’C’);
-insert into grade values(60,69,’D’);
-insert into grade values(0,59,’E’);
-commit;
+    low   double(3,0),
+    upp   double(3,0),
+    rank  char(1)
+);
+
+insert into grade values(90,100,'A');       
+insert into grade values(80,89,'B');
+insert into grade values(70,79,'C');
+insert into grade values(60,69,'D');
+insert into grade values(0,59,'E');
 ```
 19. 查询选修“3-105”课程的成绩高于“109”号同学成绩的所有同学的记录。
 20. 查询score中选学一门以上课程的同学中分数为非最高分成绩的记录。
