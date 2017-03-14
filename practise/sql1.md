@@ -14,7 +14,7 @@
 	loc 地点）
 	
 	工资 = 薪金 + 佣金
-
+	
 	1.列出至少有一个员工的所有部门。
 	2.列出薪金比“SMITH”多的所有员工。（大于最大薪水SMITH员工）
 	3.列出所有员工的姓名及其直接上级的姓名。
@@ -40,41 +40,34 @@
 ```sql
 create table dept(
 
-       deptno number(10) primary key,
+       deptno int primary key,
 
-       dname varchar2(30),
+       dname varchar(30),
 
-       loc varchar2(30)
+       loc varchar(30)
 
-)
-
-commit;
-
-drop table emp;
-
-drop table dept;
-
+);
 create table emp(
 
-       empno number(10) primary key,
+       empno int primary key,
 
-       ename varchar2(30),
+       ename varchar(30),
 
-       job varchar2(30),
+       job varchar(30),
 
-       mgr varchar2(30),
+       mgr varchar(30),
 
-       hiredate number(10),
+       hiredate date,
 
-       sal number(10),
+       sal double,
 
-       comm number(10),
+       comm double,
 
-       deptno number(10),
+       deptno int,
 
-       foreign key(deptno) references dept(deptno)
+       foreign key(deptno) references dept(deptno)
 
-)
+);
 ```
 第二步：向各表中插入数据：
 ```sql
@@ -104,27 +97,26 @@ insert into dept values(12, '管理部' ,'伦敦');
 
 insert into dept values(13, '行政部' ,'天津市');
 
-select * from dept
 
-insert into emp values(1, '关羽羽', 'CLERK' ,'刘备备', 20011109, 2000, 1000, 3);
+insert into emp values(1, '关羽羽', 'CLERK' ,'刘备备', '2001-11-09', 2000, 1000, 3);
 
-insert into emp values(2, 'SMITH', 'CLERK' ,'刘备备', 20120101, 2000, 800, 6);
+insert into emp values(2, 'SMITH', 'CLERK' ,'刘备备', '2012-01-01', 2000, 800, 6);
 
-insert into emp values(3, '刘备备', 'MANAGER' ,'宋祖英', 20080808, 9000, 4000, 3);
+insert into emp values(3, '刘备备', 'MANAGER' ,'宋祖英', '2008-08-08', 9000, 4000, 3);
 
-insert into emp values(4, 'TOM', 'ENGINEER' ,'Steve', 20050612, 3000, 1000, 1);
+insert into emp values(4, 'TOM', 'ENGINEER' ,'Steve', '2005-06-12', 3000, 1000, 1);
 
-insert into emp values(5, 'Steve', 'MANAGER' ,'宋祖英', 20110323, 80000, 9000, 1);
+insert into emp values(5, 'Steve', 'MANAGER' ,'宋祖英', '2011-03-23', 80000, 9000, 1);
 
-insert into emp values(6, '张飞飞', 'CLERK' ,'刘备备', 20101010, 2000, 1000, 3);
+insert into emp values(6, '张飞飞', 'CLERK' ,'刘备备', '2010-10-10', 2000, 1000, 3);
 
-insert into emp values(7, 'SCOTT', 'CLERK' ,'刘备备', 20071204, 2000, 1000, 3);
+insert into emp values(7, 'SCOTT', 'CLERK' ,'刘备备', '2007-12-04', 2000, 1000, 3);
 
-insert into emp values(8, '宋祖英', 'Boss' ,'无', 20060603, 2000, 1000, 8);
+insert into emp values(8, '宋祖英', 'Boss' ,'无', '2006-06-03', 2000, 1000, 8);
 
-insert into emp values(9, '曹仁人', 'SALESMAN' ,'曹操操', 20120130, 2000, 1000, 2);
+insert into emp values(9, '曹仁人', 'SALESMAN' ,'曹操操', '2012-01-30', 2000, 1000, 2);
 
-insert into emp values(10, '曹操操', 'MANAGER' ,'宋祖英',20090815, 2000, 1000, 2);
+insert into emp values(10, '曹操操', 'MANAGER' ,'宋祖英','2009-08-15', 2000, 1000, 2);
 
-insert into emp values(11, '酱油哥', 'HAPI' ,'毛泽东',20090215, 3, 1, 2);
+insert into emp values(11, '酱油哥', 'HAPI' ,'毛泽东','2009-02-15', 3, 1, 2);
 ```
