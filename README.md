@@ -16,6 +16,10 @@
   * 练习
     * [java版日报](practise/java1.md)
     * [日报系统接口](practise/daily_interface.md)
-    * [sql练习1](practise/sql.md)
-    * [sql练习2](practise/sql1.md)
+    * sql练习
+    	* mysql
+    		* [练习1](practise/sql/mysql/sql1.md)
+    		* [练习2](practise/sql/mysql/sql2.md)
+    	* oracle
+    		* [练习1](practise/sql/oracle/sql1.md)
 
